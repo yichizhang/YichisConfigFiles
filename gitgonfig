@@ -1,0 +1,56 @@
+[alias]
+    a = add
+    ap = add --patch
+    aa = add -A
+
+    acm = !git add . && git commit -m
+    acv = !git add . && git commit -v
+
+    bomb = reset --hard
+
+    br = branch
+
+    ci = commit
+    cia = commit --amend
+    cim = commit -m
+    civ = commit -v
+
+    co = checkout
+    cob = checkout -b
+    cod = checkout develop
+    coh = checkout HEAD
+
+    d = difftool
+    dc = diff --cached
+
+    fe = fetch
+
+    grconf = "!f(){ grep -lr '<<<<<<<' .; };f "
+
+    la = log -1 -U
+
+    l = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    ll = log --stat --abbrev-commit
+    lg = log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    llg = log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
+
+    pl = pull
+
+    pu = push
+    puf = push -f 
+    pusuo = git push --set-upstream origin
+
+    rb = rebase
+    rbcont = rebase --continue
+    rbi = rebase -i
+    rbid = rebase -i develop
+
+    re = reset
+
+    s = stash
+    sli = stash list
+    spa = stash --patch
+    sp = stash pop
+
+    st = status
+    unstage = reset HEAD --
