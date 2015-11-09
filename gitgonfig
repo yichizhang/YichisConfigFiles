@@ -34,6 +34,15 @@
     lg = log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     llg = log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
 
+    lc ="!f(){ printf \"\n\"; git status --porcelain | sed s/^...// | awk '{printf \"%5d : %s\\n\", NR, $0; if(NR%4 == 0){ print \"\";} }'; printf \"\n\";  };f"
+    lcx="!f(){ git status --porcelain | sed s/^...// | sed -n $2 | xargs git $1; };f"
+
+    ld="!f(){ printf \"\n\"; git diff --name-only | awk '{printf \"%5d : %s\\n\", NR, $0; if(NR%4 == 0){ print \"\";} }'; printf \"\n\"; };f"
+    ldx="!f(){ git diff --name-only | sed -n $2 | xargs git $1; };f"
+
+    mg = merge
+    mgd = merge develop
+
     pl = pull
 
     pu = push
@@ -51,6 +60,10 @@
     sli = stash list
     spa = stash --patch
     sp = stash pop
+
+    san = "!sh -c 'git stash apply stash@{$1}' -"
+    sdrn = "!sh -c 'git stash drop stash@{$1}' -"
+    sski = stash save --keep-index
 
     st = status
     unstage = reset HEAD --
