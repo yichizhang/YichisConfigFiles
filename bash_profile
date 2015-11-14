@@ -1,0 +1,3 @@
+
+alias wi="networksetup -setairportpower en0 on"
+alias wo="networksetup -setairportpower en0 off"
