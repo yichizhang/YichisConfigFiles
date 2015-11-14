@@ -20,6 +20,8 @@
     cod = checkout develop
     coh = checkout HEAD
 
+    cpk = cherry-pick
+
     d = diff
     dc = diff --cached
 
@@ -63,6 +65,7 @@
 
     san = "!sh -c 'git stash apply stash@{$1}' -"
     sdrn = "!sh -c 'git stash drop stash@{$1}' -"
+    sshn= "!sh -c 'git stash show -p stash@{$1}' -"
     sski = stash save --keep-index
 
     st = status
