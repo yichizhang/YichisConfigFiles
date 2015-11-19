@@ -51,4 +51,8 @@ nnoremap ,<Up>   :<C-u>silent! move-2<CR>==
 nnoremap ,<Down> :<C-u>silent! move+<CR>==
 xnoremap ,<Up>   :<C-u>silent! '<,'>move-2<CR>gv=gv
 xnoremap ,<Down> :<C-u>silent! '<,'>move'>+<CR>gv=gv
+" Look for merge conflicts
+nnoremap ,w :/<<<<<<<<CR>
+nnoremap ,t :/=======<CR>
+nnoremap ,c :/>>>>>>><CR>
 
