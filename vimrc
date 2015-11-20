@@ -47,7 +47,25 @@ set formatoptions=l
 "
 colorscheme darkblue
 set cmdheight=4
-set number
+set relativenumber
+:set numberwidth=5
+" Auto line number
+" http://jeffkreeftmeijer.com/2012/relative-line-numbers-in-vim-for-super-fast-movement/
+:au FocusLost * :set number
+:au FocusGained * :set relativenumber
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+" Number toggle
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+"
+nnoremap <C-n> :call NumberToggle()<cr>
+"
 set ruler
 
 """
