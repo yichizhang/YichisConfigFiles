@@ -28,11 +28,19 @@ set wildignore=*.o,*~,*.pyc
 """
 " Syntax / formatting
 "
+" Indentation
 filetype indent plugin on
 set smartindent
 set autoindent
+set tabstop=4
+set shiftwidth=4
+" tab -> spaces
+set expandtab
 " Enable syntax highlighting
 syntax on
+" No auto newline
+:set wrap linebreak nolist
+set formatoptions=l
 
 """
 " Appearance
