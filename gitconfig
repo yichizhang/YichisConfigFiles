@@ -10,10 +10,10 @@
 
     br = branch
 
-    ci = commit
-    cia = commit --amend
-    cim = commit -m
-    civ = commit -v
+    c = commit
+    ca = commit --amend
+    cm = commit -m
+    cv = commit -v
 
     co = checkout
     cob = checkout -b
