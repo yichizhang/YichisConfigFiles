@@ -22,13 +22,6 @@
             <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, KeyCode::PAGEDOWN</autogen>
              -->
 
-            <name>Cursor Up to left click, Cursor Down to right click</name>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::NONE, PointingButton::LEFT, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::NONE, PointingButton::RIGHT, ModifierFlag::NONE
-            </autogen>
-
-
             <name>Shift + Cursor Up / Cursor Down to Pageup / Pagedown</name>
             <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::SHIFT_L, KeyCode::PAGEUP, ModifierFlag::NONE
             </autogen>
@@ -430,6 +423,15 @@
             <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
             <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::COMMAND_R</autogen>
             <autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::OPTION_R</autogen>
+        </item>
+
+        <item>
+            <name>Cursor Up to left click, Cursor Down to right click</name>
+            <identifier>remap.yz_up_and_down_to_clicks</identifier>
+            <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::NONE, PointingButton::LEFT, ModifierFlag::NONE
+            </autogen>
+            <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::NONE, PointingButton::RIGHT, ModifierFlag::NONE
+            </autogen>
         </item>
     </item>
 </root>
