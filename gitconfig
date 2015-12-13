@@ -1,3 +1,9 @@
+[core]
+	excludesfile = /Users/yichi/.gitignore_global
+	editor = /usr/local/bin/vim
+[user]
+	name = Yichi Zhang
+	email = zhang-yi-chi@hotmail.com
 [alias]
     a = add
     ap = add --patch
@@ -71,15 +77,3 @@
     st = status
     unstage = reset HEAD --
 
-[core]
-	excludesfile = /Users/yichi/.gitignore_global
-	editor = /usr/local/bin/vim
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[user]
-	name = Yichi Zhang
-	email = zhang-yi-chi@hotmail.com
