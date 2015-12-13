@@ -49,7 +49,7 @@
 
     pu = push
     puf = push -f 
-    pusuo = git push --set-upstream origin
+    pusuo = push --set-upstream origin
 
     rb = rebase
     rbcont = rebase --continue
