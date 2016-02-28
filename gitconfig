@@ -21,6 +21,8 @@
     cm = commit -m
     cv = commit -v
 
+    cl = clone
+
     co = checkout
     cob = checkout -b
     cod = checkout develop
