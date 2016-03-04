@@ -20,6 +20,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'git://git.wincent.com/command-t.git'
+" Editing
+Plugin 'airblade/vim-gitgutter'
+Plugin 'changesPlugin'
 " Other
 Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -108,6 +111,7 @@ set formatoptions=l
 """
 " Appearance
 "
+set t_Co=256
 colorscheme darkblue
 set cmdheight=4
 set relativenumber
