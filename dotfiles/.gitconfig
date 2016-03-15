@@ -57,7 +57,7 @@
     pl = pull
 
     pu = push
-    puf = push -f 
+    puf = push --force-with-lease
     pusuo = push --set-upstream origin
 
     rb = rebase
