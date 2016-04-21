@@ -226,11 +226,6 @@
             <name>F5 to Tab</name>
             <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::NONE, KeyCode::TAB</autogen>
 
-            <name>F7 to Command + OPTION + UP (Xcode switch between .m & .h files)</name>
-            <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::NONE, KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L |
-                ModifierFlag::CONTROL_L
-            </autogen>
-
             <name>F8 to Command + S (Save file)</name>
             <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::NONE, KeyCode::S, ModifierFlag::COMMAND_L</autogen>
 
