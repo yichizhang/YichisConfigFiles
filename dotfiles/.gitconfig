@@ -1,5 +1,5 @@
 [core]
-  excludesfile = /Users/yichi/.gitignore_global
+  excludesfile = ~/.gitignore_global
   editor = /usr/local/bin/vim
 [user]
   name = Yichi Zhang
