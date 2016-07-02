@@ -60,7 +60,6 @@
   rbid = rebase -i develop
 
   re = reset
-  rela = reset HEAD~1
   reh = "!sh -c 'git reset HEAD~$1' -"
 
   s = stash
