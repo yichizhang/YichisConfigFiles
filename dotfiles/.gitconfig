@@ -1,100 +1,90 @@
 [core]
-	excludesfile = /Users/yichi/.gitignore_global
-	editor = /usr/local/bin/vim
+  excludesfile = ~/.gitignore_global
+  editor = /usr/local/bin/vim
 [user]
-	name = Yichi Zhang
-	email = zhang-yi-chi@hotmail.com
+  name = Yichi Zhang
+  email = zhang-yi-chi@hotmail.com
 [alias]
-    a = add
-    ap = add --patch
-    aa = add -A
+  a = add
+  ap = add --patch
+  aa = add -A
 
-    acm = !git add . && git commit -m
-    acv = !git add . && git commit -v
+  acm = !git add . && git commit -m
+  acv = !git add . && git commit -v
 
-    bomb = reset --hard
+  bomb = reset --hard
 
-    br = branch
+  br = branch
 
-    c = commit
-    ca = commit --amend
-    cm = commit -m
-    cv = commit -v
+  c = commit
+  ca = commit --amend
+  cm = commit -m
+  cv = commit -v
 
-    cl = clone
+  cl = clone
 
-    co = checkout
-    cob = checkout -b
-    cod = checkout develop
-    coh = checkout HEAD
+  co = checkout
+  cob = checkout -b
+  cod = checkout develop
+  coh = checkout HEAD
 
-    cpk = cherry-pick
+  cpk = cherry-pick
 
-    d = diff
-    dc = diff --cached
-    dh = "!sh -c 'git diff HEAD~$1..HEAD~$2' -"
+  d = diff
+  dc = diff --cached
+  dh = "!sh -c 'git diff HEAD~$1..HEAD~$2' -"
 
-    fe = fetch
+  fe = fetch
 
-    grconf = "!f(){ grep -lr '<<<<<<<' .; };f "
+  grconf = "!f(){ grep -lr '<<<<<<<' .; };f "
 
-    la = log -1 -U
+  la = log -1 -U
 
-    l = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
-    ll = log --stat --abbrev-commit
-    lg = log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    llg = log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
+  l = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+  ll = log --stat --abbrev-commit
+  lg = log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  llg = log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
 
-    lc ="!f(){ printf \"\n\"; git status --porcelain | sed s/^...// | awk '{printf \"%5d : %s\\n\", NR, $0; if(NR%4 == 0){ print \"\";} }'; printf \"\n\";  };f"
-    lcx="!f(){ git status --porcelain | sed s/^...// | sed -n $2 | xargs git $1; };f"
+  mg = merge
+  mgd = merge develop
 
-    ld="!f(){ printf \"\n\"; git diff --name-only | awk '{printf \"%5d : %s\\n\", NR, $0; if(NR%4 == 0){ print \"\";} }'; printf \"\n\"; };f"
-    ldx="!f(){ git diff --name-only | sed -n $2 | xargs git $1; };f"
+  pl = pull
 
-    mg = merge
-    mgd = merge develop
+  pu = push
+  puf = push --force-with-lease
+  pusuo = push --set-upstream origin
 
-    pl = pull
+  rb = rebase
+  rbcont = rebase --continue
+  rbi = rebase -i
+  rbid = rebase -i develop
 
-    pu = push
-    puf = push --force-with-lease
-    pusuo = push --set-upstream origin
+  re = reset
+  reh = "!sh -c 'git reset HEAD~$1' -"
 
-    rb = rebase
-    rbcont = rebase --continue
-    rbi = rebase -i
-    rbid = rebase -i develop
+  s = stash
+  sli = stash list
+  sp = stash --patch
+  spop = stash pop
 
-    re = reset
-    rela = reset HEAD~1
-    reh = "!sh -c 'git reset HEAD~$1' -"
+  san = "!sh -c 'git stash apply stash@{$1}' -"
+  sdrn = "!sh -c 'git stash drop stash@{$1}' -"
+  sshn= "!sh -c 'git stash show -p stash@{$1}' -"
+  sski = stash save --keep-index
 
-    s = stash
-    sli = stash list
-    sp = stash --patch
-    spop = stash pop
-
-    san = "!sh -c 'git stash apply stash@{$1}' -"
-    sdrn = "!sh -c 'git stash drop stash@{$1}' -"
-    sshn= "!sh -c 'git stash show -p stash@{$1}' -"
-    sski = stash save --keep-index
-
-    st = status
-    unstage = reset HEAD --
+  st = status
+  unstage = reset HEAD --
 [color]
-    ui = always
+  ui = always
 [color "diff"]
-    meta = yellow bold
-    commit = green bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
-    whitespace = red reverse
+  meta = yellow bold
+  commit = green bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[pager]
-	diff = diff-so-fancy | less --tabs=4 -RFX
-	show = diff-so-fancy | less --tabs=4 -RFX
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22

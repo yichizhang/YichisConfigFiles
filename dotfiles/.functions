@@ -1,0 +1,71 @@
+#!/bin/bash
+
+function fzfx()
+{
+    fzf | xargs "$@"
+}
+
+# present a project selector and change to the selected directory
+function cdpj()
+{
+  base=${1:-$PROJ_ROOT}
+  if [ -z "$base" ]; then
+    echo >&2 "error: PROJ_ROOT must be set or a base directory passed as the first argument"
+    return 1
+  fi
+
+  echo >&2 "(in $base)"
+  findopts=(-type d -maxdepth 4)
+  excludes='.cocoapods|.vim/bundle'
+  
+  dir=$(
+    find -H $base ${findopts[*]} -path '*/.git' 2>/dev/null \
+      | sed 's,/.git$,,' \
+      | grep -vE "$excludes" \
+      | xargs -I{} stat -f '%m %N' '{}' | sort -nr \
+      | sed -E 's,^[0-9]+ ,,' \
+      | sed -E "s,^$base/(src/)?,," \
+      | selecta
+  )
+
+  # after selecting a project, expand it back out to its full path and jump to it
+  if [ -n "$dir" ]; then
+    dest=$base/$dir
+    if [ ! -d "$dest" ]; then
+      dest=$base/src/$dir
+    fi
+    touch "$dest" && cd "$dest"
+  fi
+}
+
+# print the last touched file in this directory
+function lf()
+{
+  ls -t $@ | grep -v '^total' | head -1
+}
+
+# edit the last touched file with EDITOR
+function elf()
+{
+  [ "x$EDITOR" != "x" ] && $EDITOR "$(lf)"
+}
+
+# open in Xcode
+function xc()
+{
+  xcpath=$(dirname $(dirname $(xcode-select -p)))
+  open -a "$xcpath" $@
+}
+
+# start a new scratch project
+function scratch()
+{
+  if [ $# = 0 ]; then
+    echo "fatal: no project name provided" >&2
+    return 1
+  fi
+
+  scratch_dir="${HOME}/src/scratch/$1"
+  git init "${scratch_dir}"
+  cd "${scratch_dir}"
+}

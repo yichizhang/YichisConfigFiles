@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+
+	Name:		Hardcore green on black
+    Author:		Yichi Zhang
+
+-->
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Yichi Zhang</string>
+	<key>name</key>
+	<string>Hardcore green on black</string>
+
+	<key>semanticClass</key>
+	<string>theme.hardcore_green_on_black</string>
+
+	<key>colorSpaceName</key>
+	<string>sRGB</string>
+	
+	<key>gutterSettings</key>
+	<dict>
+		<key>background</key>
+		<string>#000000</string>
+		<key>divider</key>
+		<string>#3a3432</string>
+		<key>foreground</key>
+		<string>#41CC45</string>
+		<key>selectionBackground</key>
+		<string>#880088</string>
+		<key>selectionForeground</key>
+		<string>#41CC45</string>
+	</dict>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#000000</string>
+				<key>caret</key>
+				<string>#FF0000</string>
+				<key>foreground</key>
+				<string>#41CC45</string>
+				<key>invisibles</key>
+				<string>#88FF88</string>
+				<key>lineHighlight</key>
+				<string>#00FFF0</string>
+				<key>selection</key>
+				<string>#880088</string>
+				<key>selectionForeground</key>
+				<string>#FFFF00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comments</string>
+			<key>scope</key>
+			<string>comment, punctuation.definition.comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#AAAAAA</string>
+			</dict>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>027d1bbe-f937-4921-8711-fa6d8d41f452</string>
+</dict>
+</plist>
