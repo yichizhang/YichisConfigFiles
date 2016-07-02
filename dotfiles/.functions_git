@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# git functions
+function gfzfx()
+{
+    fzfx git "$@"
+}
+
+function glogp()
+{
+    fzf | xargs git log -p
+}
+
+function gcob()
+{
+    local branches branch
+    branches=$(git branch --no-color -a) &&
+    branch=$(echo "$branches" | fzf +s +m -e) &&
+    git checkout $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
+}
+
+function glc()
+{
+    printf "\n"
+    git status --porcelain \
+    | sed "s/^...//" \
+    | awk '{printf "%5d : %s\n", NR, $0; if(NR%4 == 0){ print "\n";} }'
+
+    printf "\n"
+}
+
+function glcx()
+{
+    git status --porcelain \
+    | sed "s/^...//" \
+    | sed -n "${@: -1}" \
+    | xargs git "${@:1:$(($# - 1))}"
+}
+
+function gld()
+{
+    printf "\n"
+    git diff --name-only \
+    | awk '{printf "%5d : %s\n", NR, $0; if(NR%4 == 0){ print "\n";} }'
+
+    printf "\n"
+}
+
+function gldx()
+{
+    git diff --name-only \
+    | sed -n "${@: -1}" \
+    | xargs git "${@:1:$(($# - 1))}"
+}

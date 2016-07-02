@@ -7,6 +7,8 @@ export NVM_DIR="/Users/yichizhang/.nvm"
 
 [ -f "$HOME/.profile" ] && source "$HOME/.profile"
 [ -f "$HOME/.functions" ] && source "$HOME/.functions"
+[ -f "$HOME/.functions_private" ] && source "$HOME/.functions_private"
+[ -f "$HOME/.functions_git" ] && source "$HOME/.functions_git"
 
 # Add env.sh
 . ~/Projects/config/env.sh

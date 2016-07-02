@@ -14,6 +14,8 @@ compinit
 
 [ -f "$HOME/.profile" ] && source "$HOME/.profile"
 [ -f "$HOME/.functions" ] && source "$HOME/.functions"
+[ -f "$HOME/.functions_private" ] && source "$HOME/.functions_private"
+[ -f "$HOME/.functions_git" ] && source "$HOME/.functions_git"
 
 setopt promptsubst
 PROMPT='%n@%m %2~$(__git_ps1)%% '
