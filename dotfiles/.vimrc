@@ -105,8 +105,8 @@ set expandtab
 " Enable syntax highlighting
 syntax on
 " No auto newline
-:set wrap linebreak nolist
-set formatoptions=l
+" :set wrap linebreak nolist
+" set formatoptions=l
 
 """
 " Appearance
