@@ -178,15 +178,6 @@
             <name>Tab to Delete</name>
             <autogen>__KeyToKey__ KeyCode::TAB, KeyCode::DELETE</autogen>
 
-            <name>F1 to Cursor Down</name>
-            <name>F2 to Cursor Up</name>
-            <name>F3 to Cursor Left</name>
-            <name>F4 to Cursor Right</name>
-            <autogen>__KeyToKey__ KeyCode::F1, KeyCode::CURSOR_DOWN</autogen>
-            <autogen>__KeyToKey__ KeyCode::F2, KeyCode::CURSOR_UP</autogen>
-            <autogen>__KeyToKey__ KeyCode::F3, KeyCode::CURSOR_LEFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::F4, KeyCode::CURSOR_RIGHT</autogen>
-
             <name>F5 to Tab</name>
             <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::NONE, KeyCode::TAB</autogen>
 
@@ -245,8 +236,9 @@
         </item>
 
         <item>
-            <name>F1-F4 to arrow keys (F1 Down, F2 Up)</name>
+            <name>F1-F4 to arrow keys (F1 Down, F2 Up, F3 Left, F4 Right)</name>
             <identifier>remap.yz_f1_4_to_down_up_left_right</identifier>
+
             <autogen>__KeyToKey__ KeyCode::F1, KeyCode::CURSOR_DOWN</autogen>
             <autogen>__KeyToKey__ KeyCode::F2, KeyCode::CURSOR_UP</autogen>
             <autogen>__KeyToKey__ KeyCode::F3, KeyCode::CURSOR_LEFT</autogen>
