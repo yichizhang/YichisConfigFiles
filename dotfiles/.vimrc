@@ -107,6 +107,7 @@ syntax on
 " No auto newline
 " :set wrap linebreak nolist
 " set formatoptions=l
+set tw=0
 
 """
 " Appearance
