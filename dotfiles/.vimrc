@@ -23,6 +23,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Editing
 Plugin 'airblade/vim-gitgutter'
 Plugin 'changesPlugin'
+Plugin 'git://github.com/tpope/vim-unimpaired.git'
 " Other
 Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -72,6 +73,12 @@ set history=666
 set lazyredraw
 
 """
+" Syntax / formatting
+"
+"
+" Editing
+
+"""
 " UI
 "
 set visualbell
@@ -96,18 +103,67 @@ set wildignore=*.o,*~,*.pyc
 "
 " Indentation
 filetype indent plugin on
-set smartindent
-set autoindent
-set tabstop=4
-set shiftwidth=4
 " tab -> spaces
 set expandtab
 " Enable syntax highlighting
 syntax on
 " No auto newline
-" :set wrap linebreak nolist
-" set formatoptions=l
-set tw=0
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+  filetype plugin indent on
+
+  " Put these in an autocmd group, so that we can delete them easily.
+  augroup vimrcEx
+  au!
+
+  " Set up text width and format options
+  autocmd FileType text,markdown        setlocal textwidth=0
+  autocmd FileType text,markdown        setlocal autoindent wrap
+  autocmd FileType text,markdown        setlocal sts=4 ts=4 sw=4 expandtab
+  autocmd FileType c,cpp,objc,objcpp    setlocal textwidth=78
+  autocmd FileType c,cpp,objc,objcpp    setlocal formatoptions+=ro
+  autocmd FileType c,cpp,objc,objcpp    setlocal comments=b:///,sr:/**,mb:*\ ,ex:*/,b://,sr:/*,mb:*,ex:*/
+
+  " Set up some file types
+  autocmd BufRead,BufNewFile *.m set filetype=objc
+  autocmd BufRead,BufNewFile PULLREQ_EDITMSG set filetype=gitcommit
+  autocmd BufRead,BufNewFile Podfile,*.podspec,Gemfile,Vagrantfile set filetype=ruby
+
+  " Swift files
+  autocmd BufRead,BufNewFile *.swift set ts=2 sts=2 sw=2
+  autocmd BufRead,BufNewFile *.swift set expandtab
+  autocmd BufRead,BufNewFile *.swift set smartindent
+
+  autocmd FileType ruby set ts=2 sts=2 sw=2
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  " Also don't do it when the mark is in the first line, that is the default
+  " position when opening a file.
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+
+  augroup END
+
+else
+
+  set linebreak                 " when soft wrapping is enabled, break lines at word boundaries
+  set breakindent               " when soft wrapping is enabled, keep wrapped lines at same indent level
+
+  set autoindent                " always set autoindenting on
+
+  set expandtab                 " always set expandtab on
+
+endif " has("autocmd")
 
 """
 " Appearance
@@ -159,16 +215,19 @@ augroup resCur
   autocmd BufWinEnter * call ResCur()
 augroup END
 "
+" Whitespace
+:set listchars=eol:↵,tab:>=,trail:~,extends:>,precedes:<,space:·
+:set list
 
 """
 " Shortcuts
 "
 " Move Line Up/Down
 " Equivalent to Xcode `Alt-Cmd-[` `Alt-Cmd-]`
-nnoremap ,<Up>   :<C-u>silent! move-2<CR>==
-nnoremap ,<Down> :<C-u>silent! move+<CR>==
-xnoremap ,<Up>   :<C-u>silent! '<,'>move-2<CR>gv=gv
-xnoremap ,<Down> :<C-u>silent! '<,'>move'>+<CR>gv=gv
+nmap <C-Up> [e
+nmap <C-Down> ]e
+vmap <C-Up> [e`[V`]
+vmap <C-Down> ]e`[V`]
 " Look for merge conflicts
 nnoremap ,w :/<<<<<<<<CR>
 nnoremap ,t :/=======<CR>
