@@ -22,3 +22,7 @@ export PATH="$HOME/.gem/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

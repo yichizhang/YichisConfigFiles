@@ -117,3 +117,5 @@ alias envconfig="vim ~/Projects/config/env.sh"
 # Add env.sh
 . ~/Projects/config/env.sh
 . ~/__scripts/z/z.sh
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

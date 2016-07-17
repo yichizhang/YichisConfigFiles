@@ -16,3 +16,5 @@ export NVM_DIR="/Users/yichizhang/.nvm"
 
 
 . ~/.aliases
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
