@@ -36,6 +36,7 @@
 
   fe = fetch
 
+  go = !git branch --no-color | sed -En 's/^  (.+)$/\\1/p' | pick | xargs -t git checkout
   grconf = "!f(){ grep -lr '<<<<<<<' .; };f "
 
   la = log -1 -U
@@ -63,6 +64,7 @@
   reh = "!sh -c 'git reset HEAD~$1' -"
 
   s = stash
+  sha = log -1 --pretty=format:%H
   sli = stash list
   sp = stash --patch
   spop = stash pop
