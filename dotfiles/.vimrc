@@ -6,30 +6,50 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
+
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-" 
-"
+
+
 " Auto Completion
 Plugin 'Valloric/YouCompleteMe'
 " Plugin 'neocomplcache'
+
 " Version Control
 Plugin 'tpope/vim-fugitive'
+
 " Files
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'thoughtbot/pick.vim'
+
 " Editing
 Plugin 'airblade/vim-gitgutter'
 Plugin 'changesPlugin'
-Plugin 'git://github.com/tpope/vim-unimpaired.git'
+Plugin 'tpope/vim-unimpaired.git'
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'cohama/lexima.vim'
+
+" Language Specific
+Plugin 'Keithbsmiley/swift.vim'
+Plugin 'b4winckler/vim-objc'
+Plugin 'cfdrake/vim-carthage'
+Plugin 'tpope/vim-markdown'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'rust-lang/rust.vim'
+
 " Other
 Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'csapprox'
-"
-" All of your Plugins must be added before the following line
+Plugin 'xolox/vim-misc'
+Plugin 'tpope/vim-dispatch'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
