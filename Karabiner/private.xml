@@ -236,6 +236,92 @@
         </item>
 
         <item>
+            <name>Programmer Dvorak Home Row with Fn</name>
+            <identifier>remap.yz_prog_dvorak_fn</identifier>
+            <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN, KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN, KeyCode::BRACKET_LEFT, ModifierFlag::NONE
+            </autogen>
+            <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
+            </autogen>
+            <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
+            </autogen>
+            <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN, KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN, KeyCode::EQUAL, ModifierFlag::NONE</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::FN, KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::FN, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
+            </autogen>
+            <autogen>__KeyToKey__ KeyCode::QUOTE, ModifierFlag::FN, KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
+        </item>
+
+        <item>
+            <name>Symbols with fn</name>
+            <identifier>remap.yz_symbols_with_fn</identifier>
+            <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN, KeyCode::COMMA, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::FN, KeyCode::DOT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::FN, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN, KeyCode::EQUAL, ModifierFlag::NONE</autogen>
+            <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN, KeyCode::BRACKET_LEFT, ModifierFlag::NONE</autogen>
+            <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::FN, KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN, KeyCode::EQUAL, ModifierFlag::NONE</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::FN, KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::FN, KeyCode::MINUS, ModifierFlag::NONE</autogen>
+            <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN, KeyCode::MINUS, ModifierFlag::NONE, KeyCode::DOT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::FN, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::NONE</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
+        </item>
+
+        <item>
+            <name>Simultaneous Key Presses</name>
+            <identifier>remap.yz_simultaneous_key_press</identifier>
+
+            <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::W, KeyCode::ESCAPE</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::E, KeyCode::F9</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, KeyCode::SPACE, ModifierFlag::OPTION_L</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::R, KeyCode::T, KeyCode::F13</autogen>
+
+            <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::DELETE</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::D, KeyCode::RETURN, SimultaneousKeyPresses::Option::RAW</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::F, KeyCode::SPACE</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::G, KeyCode::TAB</autogen>
+
+            <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::X, KeyCode::CURSOR_DOWN</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::C, KeyCode::CURSOR_UP</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::V, KeyCode::CURSOR_LEFT</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::V, KeyCode::B, KeyCode::CURSOR_RIGHT</autogen>
+
+
+
+            <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::J, KeyCode::VK_LOCK_FN</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::K, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::L, KeyCode::BRACKET_LEFT, ModifierFlag::NONE</autogen>
+
+            <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::QUOTE</autogen>
+        </item>
+
+        <item>
+            <name>F7 to FN</name>
+            <identifier>remap.yz_rhs_fn</identifier>
+
+            <autogen>__KeyToKey__ KeyCode::F7, KeyCode::FN</autogen>
+        </item>
+
+        <item>
+            <name>Home to FN</name>
+            <identifier>remap.yz_home_to_fn</identifier>
+
+            <autogen>__KeyToKey__ KeyCode::HOME, KeyCode::FN</autogen>
+        </item>
+
+        <item>
             <name>F1-F4 to arrow keys (F1 Down, F2 Up, F3 Left, F4 Right)</name>
             <identifier>remap.yz_f1_4_to_down_up_left_right</identifier>
 
