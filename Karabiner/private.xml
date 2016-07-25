@@ -5,121 +5,6 @@
         <name>Yichi's Favourite</name>
 
         <item>
-            <name>TEK Only</name>
-            <name>--------</name>
-            <identifier>remap.yz_tek_only</identifier>
-
-
-            <name>Menu key to Command R</name>
-            <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::COMMAND_R</autogen>
-
-            <name>Print Screen to Command + X</name>
-            <autogen>__KeyToKey__ KeyCode::PC_PRINTSCREEN, ModifierFlag::NONE, KeyCode::X, ModifierFlag::COMMAND_L
-            </autogen>
-
-            <name>Shift + Cursor Up / Cursor Down to Pageup / Pagedown</name>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::SHIFT_L, KeyCode::PAGEUP, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::SHIFT_L, KeyCode::PAGEDOWN, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::SHIFT_R, KeyCode::PAGEUP, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::SHIFT_R, KeyCode::PAGEDOWN, ModifierFlag::NONE
-            </autogen>
-
-
-            <name>Cursor Left / Cursor Right to Home / End</name>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, KeyCode::HOME</autogen>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::END</autogen>
-
-            <name>Pageup, Pagedown, Home and End to Cursor Up, Cursor Down, Cursor Left and Cursor Right</name>
-            <autogen>__KeyToKey__ KeyCode::PAGEUP, KeyCode::CURSOR_UP</autogen>
-            <autogen>__KeyToKey__ KeyCode::PAGEDOWN, KeyCode::CURSOR_DOWN</autogen>
-            <autogen>__KeyToKey__ KeyCode::HOME, KeyCode::CURSOR_LEFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::END, KeyCode::CURSOR_RIGHT</autogen>
-        </item>
-
-        <item>
-            <name>Filco Only</name>
-            <name>----------</name>
-            <identifier>remap.yz_filco_only</identifier>
-
-            <name>Print Screen, Scroll Lock and Pause to Command + XCV (Workman layout)</name>
-            <autogen>__KeyToKey__ KeyCode::PC_PRINTSCREEN, ModifierFlag::NONE, KeyCode::X, ModifierFlag::COMMAND_L
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::PC_SCROLLLOCK, ModifierFlag::NONE, KeyCode::V, ModifierFlag::COMMAND_L
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::PC_PAUSE, ModifierFlag::NONE, KeyCode::B, ModifierFlag::COMMAND_L</autogen>
-
-            <name>Right Shift + Print Screen / Pause / F12 to Command + S / R / W (Workman layout)</name>
-            <autogen>__KeyToKey__ KeyCode::PC_PRINTSCREEN, ModifierFlag::SHIFT_R, KeyCode::S, ModifierFlag::COMMAND_L
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::PC_PAUSE, ModifierFlag::SHIFT_R, KeyCode::E, ModifierFlag::COMMAND_L
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::F12, ModifierFlag::SHIFT_R, KeyCode::R, ModifierFlag::COMMAND_L</autogen>
-
-            <name>PC Application key to Alt R</name>
-            <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::OPTION_R</autogen>
-
-            <name>Control + F1 - F12 to Multimedia Keys</name>
-            <autogen>__KeyToKey__ KeyCode::F1, ModifierFlag::CONTROL_L, ConsumerKeyCode::BRIGHTNESS_DOWN</autogen>
-            <autogen>__KeyToKey__ KeyCode::F2, ModifierFlag::CONTROL_L, ConsumerKeyCode::BRIGHTNESS_UP</autogen>
-            <autogen>__KeyToKey__ KeyCode::F3, ModifierFlag::CONTROL_L, KeyCode::EXPOSE_ALL</autogen>
-            <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::CONTROL_L, KeyCode::DASHBOARD</autogen>
-            <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::CONTROL_L, ConsumerKeyCode::KEYBOARDLIGHT_LOW</autogen>
-            <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::CONTROL_L, ConsumerKeyCode::KEYBOARDLIGHT_HIGH</autogen>
-            <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::CONTROL_L, ConsumerKeyCode::MUSIC_PREV</autogen>
-            <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::CONTROL_L, ConsumerKeyCode::MUSIC_PLAY</autogen>
-            <autogen>__KeyToKey__ KeyCode::F9, ModifierFlag::CONTROL_L, ConsumerKeyCode::MUSIC_NEXT</autogen>
-            <autogen>__KeyToKey__ KeyCode::F10, ModifierFlag::CONTROL_L, ConsumerKeyCode::VOLUME_MUTE</autogen>
-            <autogen>__KeyToKey__ KeyCode::F11, ModifierFlag::CONTROL_L, ConsumerKeyCode::VOLUME_DOWN</autogen>
-            <autogen>__KeyToKey__ KeyCode::F12, ModifierFlag::CONTROL_L, ConsumerKeyCode::VOLUME_UP</autogen>
-
-            <autogen>__KeyToKey__ KeyCode::F1, ModifierFlag::CONTROL_R, ConsumerKeyCode::BRIGHTNESS_DOWN</autogen>
-            <autogen>__KeyToKey__ KeyCode::F2, ModifierFlag::CONTROL_R, ConsumerKeyCode::BRIGHTNESS_UP</autogen>
-            <autogen>__KeyToKey__ KeyCode::F3, ModifierFlag::CONTROL_R, KeyCode::EXPOSE_ALL</autogen>
-            <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::CONTROL_R, KeyCode::DASHBOARD</autogen>
-            <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::CONTROL_R, ConsumerKeyCode::KEYBOARDLIGHT_LOW</autogen>
-            <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::CONTROL_R, ConsumerKeyCode::KEYBOARDLIGHT_HIGH</autogen>
-            <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::CONTROL_R, ConsumerKeyCode::MUSIC_PREV</autogen>
-            <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::CONTROL_R, ConsumerKeyCode::MUSIC_PLAY</autogen>
-            <autogen>__KeyToKey__ KeyCode::F9, ModifierFlag::CONTROL_R, ConsumerKeyCode::MUSIC_NEXT</autogen>
-            <autogen>__KeyToKey__ KeyCode::F10, ModifierFlag::CONTROL_R, ConsumerKeyCode::VOLUME_MUTE</autogen>
-            <autogen>__KeyToKey__ KeyCode::F11, ModifierFlag::CONTROL_R, ConsumerKeyCode::VOLUME_DOWN</autogen>
-            <autogen>__KeyToKey__ KeyCode::F12, ModifierFlag::CONTROL_R, ConsumerKeyCode::VOLUME_UP</autogen>
-
-            <name>F12 to Command + Z</name>
-            <autogen>__KeyToKey__ KeyCode::F12, ModifierFlag::NONE, KeyCode::Z, ModifierFlag::COMMAND_L</autogen>
-
-        </item>
-
-        <item>
-            <name>Filco and Kinesis</name>
-            <name>-----------------</name>
-            <identifier>remap.yz_filco_and_kinesis</identifier>
-
-
-            <name>Pageup to left click, Pagedown to right click</name>
-            <autogen>__KeyToKey__ FROMKEYCODE_PAGEUP, ModifierFlag::NONE, PointingButton::LEFT, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ FROMKEYCODE_PAGEDOWN, ModifierFlag::NONE, PointingButton::RIGHT, ModifierFlag::NONE
-            </autogen>
-
-            <name>Shift + Pageup/Pagedown for Pageup/Pagedown</name>
-            <autogen>__KeyToKey__ FROMKEYCODE_PAGEUP, ModifierFlag::SHIFT_L, FROMKEYCODE_PAGEUP, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ FROMKEYCODE_PAGEDOWN, ModifierFlag::SHIFT_L, FROMKEYCODE_PAGEDOWN,
-                ModifierFlag::NONE
-            </autogen>
-
-            <autogen>__KeyToKey__ FROMKEYCODE_PAGEUP, ModifierFlag::SHIFT_R, FROMKEYCODE_PAGEUP, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ FROMKEYCODE_PAGEDOWN, ModifierFlag::SHIFT_R, FROMKEYCODE_PAGEDOWN,
-                ModifierFlag::NONE
-            </autogen>
-        </item>
-
-        <item>
             <name>Common to all</name>
             <name>-------------</name>
             <identifier>remap.yz_common_to_all</identifier>
@@ -188,73 +73,6 @@
             <autogen>__KeyToKey__ KeyCode::UK_SECTION, KeyCode::COMMAND_R</autogen>
         </item>
 
-
-        <item>
-            <name>Programmer Dvorak Trick (Symbols)</name>
-            <identifier>remap.yz_prog_dvorak_symbols</identifier>
-            <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::NONE, KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE, KeyCode::BRACKET_LEFT, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::NONE, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::NONE, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_5, ModifierFlag::NONE, KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::EQUAL, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_7, ModifierFlag::NONE, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_8, ModifierFlag::NONE, KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_9, ModifierFlag::NONE, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::NONE, KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
-        </item>
-
-        <item>
-            <name>Programmer Dvorak Trick (Option for Numbers; Order 123 456 789 0)</name>
-            <identifier>remap.yz_prog_dvorak_option_for_numbers_normal_order</identifier>
-            <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::OPTION_L, KeyCode::KEY_1, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::OPTION_L, KeyCode::KEY_2, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::OPTION_L, KeyCode::KEY_3, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::OPTION_L, KeyCode::KEY_4, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_5, ModifierFlag::OPTION_L, KeyCode::KEY_5, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::OPTION_L, KeyCode::KEY_6, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_7, ModifierFlag::OPTION_L, KeyCode::KEY_7, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_8, ModifierFlag::OPTION_L, KeyCode::KEY_8, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_9, ModifierFlag::OPTION_L, KeyCode::KEY_9, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::OPTION_L, KeyCode::KEY_0, ModifierFlag::NONE</autogen>
-
-            <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::OPTION_R, KeyCode::KEY_1, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::OPTION_R, KeyCode::KEY_2, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::OPTION_R, KeyCode::KEY_3, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::OPTION_R, KeyCode::KEY_4, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_5, ModifierFlag::OPTION_R, KeyCode::KEY_5, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::OPTION_R, KeyCode::KEY_6, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_7, ModifierFlag::OPTION_R, KeyCode::KEY_7, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_8, ModifierFlag::OPTION_R, KeyCode::KEY_8, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_9, ModifierFlag::OPTION_R, KeyCode::KEY_9, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::OPTION_R, KeyCode::KEY_0, ModifierFlag::NONE</autogen>
-        </item>
-
-        <item>
-            <name>Programmer Dvorak Home Row with Fn</name>
-            <identifier>remap.yz_prog_dvorak_fn</identifier>
-            <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN, KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN, KeyCode::BRACKET_LEFT, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN, KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN, KeyCode::EQUAL, ModifierFlag::NONE</autogen>
-            <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::FN, KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::FN, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
-            <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::QUOTE, ModifierFlag::FN, KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
-        </item>
-
         <item>
             <name>Symbols with fn</name>
             <identifier>remap.yz_symbols_with_fn</identifier>
@@ -315,13 +133,6 @@
         </item>
 
         <item>
-            <name>Home to FN</name>
-            <identifier>remap.yz_home_to_fn</identifier>
-
-            <autogen>__KeyToKey__ KeyCode::HOME, KeyCode::FN</autogen>
-        </item>
-
-        <item>
             <name>F1-F4 to arrow keys (F1 Down, F2 Up, F3 Left, F4 Right)</name>
             <identifier>remap.yz_f1_4_to_down_up_left_right</identifier>
 
@@ -329,15 +140,6 @@
             <autogen>__KeyToKey__ KeyCode::F2, KeyCode::CURSOR_UP</autogen>
             <autogen>__KeyToKey__ KeyCode::F3, KeyCode::CURSOR_LEFT</autogen>
             <autogen>__KeyToKey__ KeyCode::F4, KeyCode::CURSOR_RIGHT</autogen>
-        </item>
-
-        <item>
-            <name>Cursor Up to left click, Cursor Down to right click</name>
-            <identifier>remap.yz_up_and_down_to_clicks</identifier>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::NONE, PointingButton::LEFT, ModifierFlag::NONE
-            </autogen>
-            <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::NONE, PointingButton::RIGHT, ModifierFlag::NONE
-            </autogen>
         </item>
     </item>
 </root>
