@@ -82,9 +82,11 @@
 
       <!-- R3 -->
       <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::W, KeyCode::ESCAPE</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::E, KeyCode::F9</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::E, KeyCode::FORWARD_DELETE</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, KeyCode::DELETE</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::R, KeyCode::T, KeyCode::F13</autogen>
+
+      <autogen>__SimultaneousKeyPresses__ KeyCode::T, KeyCode::Y, KeyCode::F9</autogen>
 
       <autogen>__SimultaneousKeyPresses__ KeyCode::Y, KeyCode::U, KeyCode::BACKQUOTE</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::I, KeyCode::EQUAL</autogen>
