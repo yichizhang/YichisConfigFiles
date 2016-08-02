@@ -84,25 +84,40 @@
       <name>Simultaneous Key Presses</name>
       <identifier>remap.yz_simultaneous_key_press</identifier>
 
+      <!-- R4 -->
+      <autogen>__SimultaneousKeyPresses__ KeyCode::1, KeyCode::2, KeyCode::1, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::2, KeyCode::3, KeyCode::2, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::3, KeyCode::4, KeyCode::3, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::4, KeyCode::5, KeyCode::4, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::5, KeyCode::6, KeyCode::5, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::6, KeyCode::7, KeyCode::6, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::7, KeyCode::8, KeyCode::7, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::8, KeyCode::9, KeyCode::8, ModifierFlag::SHIFT_L</autogen>
+
+      <!-- R3 -->
       <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::W, KeyCode::ESCAPE</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::E, KeyCode::F9</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, KeyCode::DELETE</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::R, KeyCode::T, KeyCode::F13</autogen>
 
-      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::G, KeyCode::TAB</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::G, KeyCode::H, KeyCode::MINUS</autogen>
-
-      <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::V, KeyCode::RETURN, SimultaneousKeyPresses::Option::RAW</autogen>
-      <autogen>__SimultaneousKeyPresses__ KeyCode::V, KeyCode::B, KeyCode::EQUAL</autogen>
-
       <autogen>__SimultaneousKeyPresses__ KeyCode::Y, KeyCode::U, KeyCode::BACKQUOTE</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::I, KeyCode::EQUAL</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::O, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
 
+      <!-- R2 -->
+      <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::G, KeyCode::TAB</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::G, KeyCode::H, KeyCode::MINUS</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::J, KeyCode::TAB</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::QUOTE</autogen>
 
+      <!-- R1 -->
+      <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::C, KeyCode::BRACKET_LEFT</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::V, KeyCode::RETURN, SimultaneousKeyPresses::Option::RAW</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::V, KeyCode::B, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+
+      <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::M, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::COMMA, KeyCode::RETURN, SimultaneousKeyPresses::Option::RAW</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::DOT, KeyCode::BRACKET_RIGHT</autogen>
     </item>
 
     <item>
