@@ -63,21 +63,7 @@
       <name>Symbols with fn</name>
       <identifier>remap.yz_symbols_with_fn</identifier>
       <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN, KeyCode::DELETE</autogen>
-      <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::FN, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN, KeyCode::EQUAL, ModifierFlag::NONE</autogen>
       <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::FN, KeyCode::RETURN, SimultaneousKeyPresses::Option::RAW</autogen>
-
-      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN, KeyCode::BRACKET_LEFT, ModifierFlag::NONE</autogen>
-      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
-
-      <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::FN, KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::FN, KeyCode::MINUS, ModifierFlag::NONE</autogen>
-      <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN, KeyCode::MINUS, ModifierFlag::NONE, KeyCode::DOT, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::FN, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
-
-      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::NONE</autogen>
-      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::FN, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
     </item>
 
     <item>
