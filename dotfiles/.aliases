@@ -1,7 +1,9 @@
 alias wi="networksetup -setairportpower en0 on"
 alias wo="networksetup -setairportpower en0 off"
 
+alias stupidxc="rm -rf ~/Library/Developer/Xcode/DerivedData"
+
 alias be="bundle exec"
+alias bi="bundle install"
 alias bepi="bundle exec pod install"
 alias bepu="bundle exec pod update"
-
