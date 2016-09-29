@@ -67,6 +67,27 @@
     </item>
 
     <item>
+      <name>Mouse control with fn</name>
+      <identifier>remap.yz_mouse_control_with_fn</identifier>
+
+      <autogen>__KeyToKey__ KeyCode::7, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_BUTTON_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::9, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_BUTTON_RIGHT</autogen>
+
+      <autogen>__KeyToKey__ KeyCode::8, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_RIGHT</autogen>
+
+      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_BUTTON_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_BUTTON_RIGHT</autogen>
+
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_FIXED_DISTANCE_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_FIXED_DISTANCE_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_FIXED_DISTANCE_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_FIXED_DISTANCE_RIGHT</autogen>
+    </item>
+
+    <item>
       <name>Simultaneous Key Presses</name>
       <identifier>remap.yz_simultaneous_key_press</identifier>
 
@@ -86,11 +107,16 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, KeyCode::DELETE</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::R, KeyCode::T, KeyCode::F13</autogen>
 
+      <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::F, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::R, KeyCode::G, KeyCode::VK_LOCK_FN</autogen>
+
       <autogen>__SimultaneousKeyPresses__ KeyCode::T, KeyCode::Y, KeyCode::F9</autogen>
 
       <autogen>__SimultaneousKeyPresses__ KeyCode::Y, KeyCode::U, KeyCode::BACKQUOTE</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::I, KeyCode::EQUAL</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::O, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
+
+      <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::J, KeyCode::CURSOR_RIGHT</autogen>
 
       <!-- R2 -->
       <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::G, KeyCode::TAB</autogen>
@@ -106,6 +132,7 @@
       <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::M, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::COMMA, KeyCode::RETURN, SimultaneousKeyPresses::Option::RAW</autogen>
       <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::DOT, KeyCode::BRACKET_RIGHT</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::DOT, KeyCode::SLASH, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
     </item>
 
     <item>
