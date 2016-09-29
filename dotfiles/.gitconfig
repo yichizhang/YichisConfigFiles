@@ -24,7 +24,6 @@
   cl = clone
 
   co = checkout
-  cob = checkout -b
   cod = checkout develop
   coh = checkout HEAD
 
@@ -41,13 +40,11 @@
 
   la = log -1 -U
 
-  l = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
-  ll = log --stat --abbrev-commit
   lg = log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  llg = log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
+  lgc = log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
+  lgs = log --stat --abbrev-commit
 
   mg = merge
-  mgd = merge develop
 
   pl = pull
 
@@ -64,10 +61,11 @@
   reh = "!sh -c 'git reset HEAD~$1' -"
 
   s = stash
-  sha = log -1 --pretty=format:%H
   sli = stash list
   sp = stash --patch
   spop = stash pop
+
+  sha = log -1 --pretty=format:%H
 
   san = "!sh -c 'git stash apply stash@{$1}' -"
   sdrn = "!sh -c 'git stash drop stash@{$1}' -"
