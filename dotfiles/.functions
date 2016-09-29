@@ -8,13 +8,25 @@ function fzfx()
 # present a project selector and change to the selected directory
 function cdpj()
 {
+  cdpjx $PROJ_ROOT 4
+}
+
+function cdgo()
+{
+  cdpjx $GOPATH 6
+}
+
+function cdpjx()
+{
   base=${1:-$PROJ_ROOT}
+  maxdepth=${2:-4}
+
   if [ -z "$base" ]; then
     echo >&2 "error: PROJ_ROOT must be set or a base directory passed as the first argument"
     return 1
   fi
 
-  findopts=(-type d -maxdepth 4)
+  findopts=(-type d -maxdepth $maxdepth)
   excludes='.cocoapods|.vim/bundle'
   
   dir=$(
