@@ -40,9 +40,6 @@
         KeyCode::KEY_0, ModifierFlag::SHIFT_L
       </autogen>
 
-      <name>F5 to Tab</name>
-      <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::NONE, KeyCode::TAB</autogen>
-
       <name>TEK - Section key to Command R</name>
       <autogen>__KeyToKey__ KeyCode::UK_SECTION, KeyCode::COMMAND_R</autogen>
     </item>
