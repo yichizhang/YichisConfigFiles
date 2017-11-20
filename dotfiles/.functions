@@ -5,6 +5,24 @@ function fzfx()
     fzf | xargs "$@"
 }
 
+function g_mgnf_in_d_then_pu() {
+  cbr=$(git cbr)
+
+  git cod && git mgnf "$cbr" && git pu
+}
+
+function g_mgnf_in_d_then_pu_and_come_back() {
+  cbr=$(git cbr)
+
+  git cod && git mgnf "$cbr" && git pu && git co "$cbr"
+}
+
+function fmtx() {
+  CLANG_FORMAT="/usr/local/bin/clang-format"
+
+  find $@ \( -name '*.h' -or -name '*.m' -or -name '*.mm' \) -print0 | xargs -0 "$CLANG_FORMAT" -i
+}
+
 # present a project selector and change to the selected directory
 function cdpj()
 {
@@ -61,11 +79,34 @@ function elf()
   [ "x$EDITOR" != "x" ] && $EDITOR "$(lf)"
 }
 
-# open in Xcode
-function xc()
-{
+function xc() {
   xcpath=$(dirname $(dirname $(xcode-select -p)))
   open -a "$xcpath" $@
+}
+
+function xc2() {
+  xcpath=$(dirname $(dirname $(xcode-select -p)))
+  open -a "$xcpath" $@
+}
+
+# open in Xcode
+function xc1()
+{
+  if test -n "$(find $@ -maxdepth 1 -name '*.xcworkspace' -print -quit)"
+  then
+    echo "Opening workspace"
+    open *.xcworkspace
+    return
+  else
+    if test -n "$(find $@ -maxdepth 1 -name '*.xcodeproj' -print -quit)"
+    then
+      echo "Opening project"
+      open *.xcodeproj
+      return  
+    else
+      echo "Nothing found"
+    fi
+  fi
 }
 
 # start a new scratch project
