@@ -1,6 +1,6 @@
 [core]
   excludesfile = ~/.gitignore_global
-  editor = /usr/local/bin/vim
+	editor = subl -w -n
 [user]
   name = Yichi Zhang
   email = zhang-yi-chi@hotmail.com
@@ -12,9 +12,11 @@
   acm = !git add . && git commit -m
   acv = !git add . && git commit -v
 
+  abomb = !git add -A && git reset --hard
   bomb = reset --hard
-
+  
   br = branch
+  cbr = "!sh -c 'git rev-parse --abbrev-ref HEAD' -"
 
   c = commit
   ca = commit --amend
@@ -24,14 +26,16 @@
   cl = clone
 
   co = checkout
-  cod = checkout develop
+  cod = checkout dev
   coh = checkout HEAD
+  com = checkout master
 
   cpk = cherry-pick
 
   d = diff
   dc = diff --cached
   dh = "!sh -c 'git diff HEAD~$1..HEAD~$2' -"
+  dch = diff --word-diff-regex=.
 
   fe = fetch
 
@@ -44,7 +48,7 @@
   lgc = log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
   lgs = log --stat --abbrev-commit
 
-  mg = merge
+  mgnf = merge --no-ff
 
   pl = pull
 
@@ -55,7 +59,8 @@
   rb = rebase
   rbcont = rebase --continue
   rbi = rebase -i
-  rbid = rebase -i develop
+  rbid = rebase -i dev
+  rbim = rebase -i master
 
   re = reset
   reh = "!sh -c 'git reset HEAD~$1' -"
